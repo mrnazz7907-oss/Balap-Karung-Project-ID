@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balap Karung Club Indonesia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-cream: #F6F4EB;
+            --bg-beige: #EBE5D7;
+            --bg-brown: #AF6E37;
+            --bg-dark: #1A1A1A;
+            --text-dark: #222222;
+            --text-brown: #AF6E37;
+            --badge-yellow: #ECA420;
+            --font-sans: 'Inter', sans-serif;
+            --font-serif: 'Playfair Display', serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;  
+        }
+        body {
+            font-family: var(--font-sans);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .container {
+            max-width: 1200px;
+            margin:0 auto;
+            padding: 0 5%;
+        }
+
+        h1,h2,h3 {
+            font-family: var(--font-serif);
+            font-weight: 800;
+            line-height: 1.1;
+        }
+        .section-tag {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-brown);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 1.5rem;
+        }
+        .section-tag::before {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 1px;
+            background-color: var(--text-brown);
+        }
+        .section-tag.dark-tag {
+            color: #222;
+        }
+        .section-tag.dark-tag::before {
+            background-color: #222;
+        }
+        .section-tag.light-tag {
+            color: #fff;
+        }
+        .section-tag.light-tag::before {
+            background-color: #fff;
+        }
+
+        .top-section {
+            background-color: var(--bg-cream);
+            padding-top: 2rem;
+            padding-bottom: 4rem;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5rem;
+        }
+        .logo-wrap {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-circle {
+            width: 40px;
+            height: 40px;
+            background-color: var(--bg-brown);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-family: var(--font-serif);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        .logo-text h3 {
+            font-family: var(--font-sans);
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: -0.5px;
+        }
+        .logo-text p {
+            font-size: 0.65rem;
+            letter-spacing: 1px;
+            color: #666;
+            text-transform: uppercase;
+        }
+        .nac-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        .btn-outline {
+            border: 1px solid var(--text-dark);
+            padding: 8px 20px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        .btn-outline:hover {
+            background-color: var(--text-dark);
+            color: #fff;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 4rem;
+        }
+        .hero-content {
+            flex: 1;
+        }
+        .hero-title {
+            font-size: clamp(3rem, 5vw, 4.5rem);
+            margin-bottom: 1.5rem;
+        }
+        .hero-title span {
+            color: var(--text-brown);
+            display: block;
+        }
+        .hero-desc {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 400px;
+            margin-bottom: 2.5rem;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="top-section">
+        <div class="container">
+          <header>
+            <div class="logo-wrap">
+                <div class="logo-circle">BK</div>
+                <div class="logo-text">
+                    <h3>Balap Karung</h3>
+                    <p>Club Indonesia</p>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Jadwal</a>
+                <a href="#" class="btn-outline">Tentang Club</a>
+            </nav>
+          </header>
+          <section class="hero">
+            <div class="hero-content">
+                <div class="section-tag">Olahraga Rakyat Indonesia</div>
+                <h1 class=""hero-title>
+                    Melompat bersama,<br>
+                    <span>merayakan tradisi.</span>
+                </h1>
+                <p class="hero-desc">
+                    Ruang untuk bertemu, bergerak, dan menjaga serunya permainan balap karung tetap hidup di setiap generasi.
+                </p>
+                <div class="hero-actions">
+                    <a href="#" class="btn-primary">Kenali balap karung &rarr;</a>
+                </div>
+                <div class="hero-footer">
+                    <strong>SEJAK 1945</strong>
+                    <p>Identik dengan perayaan kemerdekaan di berbagai daerah Indonesia.</p>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="image/cahkarung.png" alt="Balap Karung" class="image-arch">
+            <div class="badge">
+                <span>17</span>
+                <span>Aug</span>
+            </div>
+            <div class="visual-caption">
+                <span>01</span>
+                <p>SERU BUKAN HANYA SOAL MENANG, TETAPI TENTANG BERGERAK BERSAMA.</p>
+            </div>
+            </div>
+          </section>
+        </div>
+    </div>
+    <section class="middle-section">
+        <div class="container">
+            <div class="middle-header">
+                <div class="section-tag dark-tag">Mengenal Permainanya</div>
+                <h2>Sederhana alatnya, besar kegembiraanya.</h2>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-col">
+                    <span class="info-number">01</span>
+                    <h4>Apa itu balap karung</h4>
+                    <p>Balap karung adalah perlombaan lari dengan kedua kaki dimasukkan ke dalam karung, lalu peserta melompat dari garis mulai menuju garis akhir. Permainan ini populer sebagai perlombaan tradisional, terutama saat perayaan Hari Kemerdekaan Indonesia.</p>
+                </div>
+                <div class="info-col">
+                    <span class="info-number">02</span>
+                    <h4>Jejak sejarah</h4>
+                </div>
+                <div class="info-col">
+                    <br>
+                    <p>Permainan balap karung telah dikenal sejak masa kolonial Belanda. Dahulu permainan ini dimainkan oleh anak-anak, kemudian semakin luas dan menjadi bagian yang akrab dalam perayaan kemerdekaan.</p>
+                    <p>Kini, balap karung hadir di kampung, sekolah, hingga acara komunitas—membawa semangat sportivitas, kebersamaan, dan keceriaan.</p>
+                    <a href="https://id.wikipedia.org/wiki/Balap_karung" class="source-link">Sumber: Wikipedia Indonesia &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bottom-section">
+        <div class="container cta-wrap">
+            <div class="cta-content">
+                <div class="section-tag light-tag">Agenda Club</div>
+                <h2>Siap untuk melompat?</h2>
+                <p>Jadwal latihan dan perlombaan perdana sedang kami persiapkan. Pantau ruang ini untuk kabar berikutnya.</p>
+            </div>
+            <div class="cta-circle">
+                <span>SEGERA</span><br>
+                Hadir
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer-wrap">
+            <div class="footer-logo">
+                <div class="logo-circle">BK</div>
+                <strong>Balap Karung Club</strong>
+            </div>
+            <p>Tradisi bergerak, cerita berlanjut</p>
+            <p>Indonesia</p>
+        </div>
+    </footer>
+</body>
+</html>
